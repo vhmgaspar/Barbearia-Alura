@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos - Barbearia Alura</title>
+        
+        <link rel="stylesheet" href="reset.css">  <!-- o reset tem q ser colocado antes de tudo pois ele reseta tudo, se for colocado depois da merda, ele reseta todas as config padrao q o navegador coloca no nosso html, q muitas vezes atrapalham. -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="img/logo.png"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>   
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <ul class="produtos">   <!--  a lista é um item de bloco e cada um dos itens da lista ocupa 100% da largura, tendo q mudar isso no css -->
+                <li>
+                    <h2>Cabelo</h2>     
+                    <img src="img/cabelo.jpg">
+                    <p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="produto-preco">R$ 25,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="img/barba.jpg">
+                    <p class="produto-descricao">Corte e desenho profissional de barba</p>
+                    <p class="produto-preco">R$ 18,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="img/cabelo+barba.jpg">
+                    <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produto-preco">R$ 35,00</p>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <img src="img/logo-branco.png">
+            <p class="copyrigth">&copy; Copyrigth Barbearia Alura - Vitor - 2022</p>
+        </footer>
+    </body>
+</html>

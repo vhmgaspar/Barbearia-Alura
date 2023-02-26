@@ -1,0 +1,304 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0; /* aumenta o espaãmento interno da parte cinza  20 = cima e baixo, 0 = esquerda direita */
+}
+
+.caixa {
+    position: relative;
+    width: 940px; /* largura padrão paginas web */
+    margin: 0 auto; /* deixa a caixa centralizada com o conteudo, deixou o conteudo no meio da parte cinza basicamente */ 
+}
+
+nav {
+    position: absolute; /*Com o position: absolute, eu consigo posicionar meu elemento em qualquer lugar da página. */ 
+    top: 110px;
+    right: 0;
+}
+
+nav li { 
+    display: inline;  /* tira a ocupação do texto de 100% da pgina na horizontal, possibilitando colocar coisas ao seu lado */
+    margin: 0 0 0 15px;  /* setou os espaçamentos de todas as direções, a do ultimo é da esquerda */
+}
+
+nav a {
+    text-transform: uppercase;  /* transforma o testo em maiusculo */
+    color: #000000;
+    font-weight: bold;  /*deixa o texto em negrito pelo css, inves de usar strong */
+    font-size: 24px;
+    text-decoration: none;  /*retirou o sublinhado do texto que estava por sererem links */
+}
+
+nav a:hover { /*o hover serve para mapear quando o mouse estiver em cima, ou seja quando o mouse estiver em cima dos links da nav acontecera algo */
+    color: rgb(20, 48, 209);
+    text-decoration: underline;
+}
+
+.principal-container{
+    display: block;
+    position: relative;
+    left: 300px;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;  /* 0 px para cima e para baixo e automatico para os lados */
+    padding: 50px 0; /* 50px cima e baixo e 0 para os lados */
+}
+
+.produtos li {
+    display: inline-block;  /*com o inline block podemos alterar o tamnho doobjeto */
+    text-align: center;
+    width: 30%; /* cada item tem 30% de ocupação da pagina, fazendo um alinhamento bonito */ 
+    vertical-align: top;    /* o display: inline-block alinhas os itens pela linha de baixo entao o vetical allign top deixa tudo pela linha de cima */
+    margin: 0 1.5%;  /*margin é o espaçamento externo e o padding o interno */
+    padding: 30px 20px;
+    box-sizing: border-box; /* os 30% são definitivos, os produtos nao serao empurrados para baixo ao aumentar o padding (espacamento interno) */
+    border: 2px solid black; /*  é isso : border-color: black;     border-width: 2px;    border-style: solid;  resumido */
+    border-radius: 10px;  /*deixa a borda redeonda */
+}
+
+.produtos li:hover {
+    border-color: rgb(20, 48, 209);
+}
+
+.produtos li:active {    /*quando está clicando */
+    border-color: green;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;  /* mesma coisa q margin-top: 10px;*/
+}
+
+footer {
+    text-align: center;
+    background: url("img/bg.jpg");  /*Colocando uma imagem como fundo */
+    padding: 40px 0;
+}
+
+.copyrigth{
+    color: aliceblue;
+    font-size: 13px;
+    margin: 20px 0 0; /*margem superior */
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {    /* replica as config do primeiro form para o segundo */
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+
+.input-padrao { /* replica as config do primeiro form para o segundo, ao inves de criar outro css para o textarea */
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    width: 50%;     /* 50% da pagina */
+}
+
+.horario {
+    margin: 15px 0;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*ao inves de mudar a cor do formulario na hora, terá um delay de 1 sec para mudar a cor */
+    cursor: pointer; /*transforma o mouse na maozinha pra mostar q é clicavel */
+}
+
+.enviar:hover {
+    background-color: rgb(133, 99, 36);
+    transform: scale(1.2); /*aumenta 20% do elemento quando passa o mouse por cima */
+}
+
+table {
+    margin: 30px 0 40px; /*20 px pra cimaa e 40 pra baixo */
+}
+
+thead {
+    background: #4e4e4e;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* CSS da pagina inicial */
+.banner {
+    	width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*duas vezes o tamanho padrao, o tirulo será 2x maior q o restante do texto */
+    margin: 0 0 1em; 
+    clear: left; /*limpa o float da esquerda, pq o float impacta na pagina toda, subindo tudo, coisas q n precisam */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #000000;
+}
+
+/*.titulo-principal:first-letter {
+    font-weight: bold;                deixa a primeira letra do titulo em negrito,dando para fazer isso em outras letras separadamente
+}*/
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;        /* fez a imagem flutuar */
+    margin: 0 20px 20px 0;  /* Cima, direita, baixo , esquerda */
+}
+
+.mapa {
+    padding: 3em 0; /*3 ppra cima e baixo e 0 laterais */
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;  /* alinha o primeiro elemento da lista com a parte de cima da imagem */
+}
+
+.itens {
+    line-height: 1.5; /*espaçamento da linha, para não ficar colada, igual no Word */
+}
+
+.itens:first-child {
+    font-weight: bold;     /* deixar em negrito o primeiro item da lista */
+} 
+
+/*itens:nth-child(4) {         pegaria o 4 elemento da lista e deixaria em negrito apenas o 4
+    font-weight: bold;
+} */
+
+.itens:before {      /* antes dos textos coloca uma estrela */
+    content: "★ ";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;  /* vai de 0 até 1, de maneira que 0.7 é 70% */ 
+    transition: 400ms; /* transição da imagem 400 mili sec */
+    box-shadow: 10px 10px 30px 0 black; /* Eixo X, eixo Y , desfoque da sombra, intensisdade (tamanho da sombra) , cor */
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3; /* 30% de opacidade */
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*
+ main > p {
+    background: red;    seleciona somente o filho direto da main, somente filhos da main, se tiver uma div na main ou uma section nao selecionara.
+}
+
+img + p { 
+    background: blue;    selecionar o primeiro parágrafo que sucede uma imagem
+
+img ~ p {
+    background: yellow      seleciona todos os parágrafos localizados depois de uma imagem
+} 
+
+
+.principal p:not(#missao) {
+    background: orange;         seleciona todos os paragrafos, menos o que tem o id "missao".
+}
+
+/* width: calc( (100% / 3) - 10px )    calcula precisamente um elemento, nesse caso 
+usa as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px */
+
+@media screen and (max-width: 480px) { 
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position:static;
+    }
+    
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%
+    }
+}
